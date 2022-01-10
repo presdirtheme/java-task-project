@@ -1,2 +1,2 @@
-# java-task-project
+# Java Task Project
 I will make java program.
