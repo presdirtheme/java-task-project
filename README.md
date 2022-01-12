@@ -1,2 +1,2 @@
-# Java Task Project
-I will make java program.
+# Java Test Project
+I learn Java.
