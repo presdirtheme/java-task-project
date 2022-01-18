@@ -1,4 +1,5 @@
 package javatest;
+import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
@@ -41,7 +42,14 @@ public class main {
         System.out.println(sum3);
         System.out.println(sum4); */
 
-        
+        Scanner sc = new Scanner(System.in);
+        String scanned = sc.next();
+       // int scanned = sc.nextInt();
+       // boolean scanned = sc.nextBoolean();
+       // double scanned = sc.nextDouble();
+        int x = Integer.parseInt(scanned);
+
+       System.out.println(scanned);
         
     }
 }
