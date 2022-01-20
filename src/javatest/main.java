@@ -46,19 +46,25 @@ public class main {
          * System.out.println(sum3);
          * System.out.println(sum4);
          */
+        /*
+         * Scanner sc = new Scanner(System.in); // data type Scanner dari tools Scanner,
+         * dinamakan sc dan selanjutnya cara
+         * // menggunakannya
+         * String scanned = sc.next(); // ini cara dan tempat untuk mendapat input dari
+         * user, simpan di variabel
+         * // scanned
+         * // int scanned = sc.nextInt(); // input menyesuaikan dengan data type yang
+         * // dipakai
+         * // boolean scanned = sc.nextBoolean();
+         * // double scanned = sc.nextDouble();
+         * int x = Integer.parseInt(scanned); // cara untuk mengubah input dari variabel
+         * scanned yaitu data type string,
+         * // menjadi input dan output integer dan di simpan di variabel x
+         * 
+         * System.out.println(x);
+         */
 
-        Scanner sc = new Scanner(System.in); // data type Scanner dari tools Scanner, dinamakan sc dan selanjutnya cara
-                                             // menggunakannya
-        String scanned = sc.next(); // ini cara dan tempat untuk mendapat input dari user, simpan di variabel
-                                    // scanned
-        // int scanned = sc.nextInt(); // input menyesuaikan dengan data type yang
-        // dipakai
-        // boolean scanned = sc.nextBoolean();
-        // double scanned = sc.nextDouble();
-        int x = Integer.parseInt(scanned); // cara untuk mengubah input dari variabel scanned yaitu data type string,
-                                           // menjadi input dan output integer dan di simpan di variabel x
-
-        System.out.println(x);
-
+         
+         System.out.println();
     }
 }
