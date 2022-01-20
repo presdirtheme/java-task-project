@@ -64,7 +64,23 @@ public class main {
          * System.out.println(x);
          */
 
-         
-         System.out.println();
+        int x = 6;
+        int y = 7;
+        int z = 10;
+
+        String x1 = "hello";
+        String y2 = "hi";
+
+        // > . < . == . >= . <= . !=
+        
+        boolean compare1 = x < y;
+        boolean compare2 = x > y;
+        boolean compare3 = x1 != y2;
+        boolean compare4 = x > y && z > y;
+        boolean compare5 = x > y || z > y;
+        boolean compare6 = !(x > y || z > y);
+        boolean compare7 = (x < y && y > z) && (z + 2 < 5 || x + 7 > y);
+
+         System.out.println(compare7);
     }
 }
