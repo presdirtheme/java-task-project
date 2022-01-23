@@ -65,40 +65,49 @@ public class main {
          */
 
         // Conditions and Booleans
-
-        int x = 6;
-        int y = 7;
-        int z = 10;
-
-        int x0 = 5;
-        int y0 = 5;
-
-        String x1 = "hello";
-        String y2 = "hi";
-
-        // > (lebih besar dari) . < (lebih kecil dari). == (sama dengan). >= (lebih
-        // besar atau sama dengan) . <= (lebih kecil atau sama dengan). != (tidak sama
-        // dengan)
-
-        boolean compare1 = x < y; // x lebih kecil dari y = true
-        boolean compare2 = x > y; // x lebih besar dari y = false
-        boolean compare3 = y >= z; // x0 >= y0; // x0 lebih besar atau sama dengan y0 = true | y lebih besar atau
-                                   // sama dengan x = false
-        boolean compare4 = y <= z; // x0 <= y0; // x0 lebih kecil atau sama dengan y0 = true | y lebih kecil atau
-                                   // sama dengan x = false
-        boolean compare5 = /* x0 == y0; */ x == z; // x0 sama dengan y0 = true | x sama dengan z = false
-        boolean compare6 = x1 != y2; // x1 (isinya) tidak sama dengan y2 = true
-        boolean compare7 = x > y && z > y; // x lebih besar dari y DAN z lebih besar dari y = false DAN true = false
-                                           // (operator DAN ini jika salah satu/kedua nya false, maka hasil nya false)
-        boolean compare8 = x > y || z > y; // x lebih besar dari y ATAU z lebih besar dari y = false ATAU true = false
-                                           // (operator ATAU ini jika salah satu/kedua nya true, maka hasil nya true)
-        boolean compare9 = !(x > y || z > y); // hasilnya = false ATAU true = true = false (tidak sama dengan ini
-                                              // berarti kebalikan dari hasil di dalam kurung ini)
-        boolean compare10 = (x < y && y > z) || (z + 2 < 5 || x + 7 > y); // operasi pertama: hasilnya = false ATAU true
-                                                                          // = true (dari hasil 2 operasi dalam kurung
-                                                                          // ini, hasil akhir nya menjadi true, karena
-                                                                          // operator ATAU)
-
-        System.out.println(compare5);
+        /*
+         * int x = 6;
+         * int y = 7;
+         * int z = 10;
+         * 
+         * int x0 = 5;
+         * int y0 = 5;
+         * 
+         * String x1 = "hello";
+         * String y2 = "hi";
+         * 
+         * // > (lebih besar dari) . < (lebih kecil dari). == (sama dengan). >= (lebih
+         * // besar atau sama dengan) . <= (lebih kecil atau sama dengan). != (tidak
+         * sama
+         * // dengan)
+         * 
+         * boolean compare1 = x < y; // x lebih kecil dari y = true
+         * boolean compare2 = x > y; // x lebih besar dari y = false
+         * boolean compare3 = y >= z; // x0 >= y0; // x0 lebih besar atau sama dengan y0
+         * = true | y lebih besar atau
+         * // sama dengan x = false
+         * boolean compare4 = y <= z; // x0 <= y0; // x0 lebih kecil atau sama dengan y0
+         * = true | y lebih kecil atau
+         * // sama dengan x = false
+         * boolean compare5 = x == z; // x0 == y0; // x0 sama dengan y0 = true | x sama
+         * dengan z = false
+         * boolean compare6 = x1 != y2; // x1 (isinya) tidak sama dengan y2 = true
+         * boolean compare7 = x > y && z > y; // x lebih besar dari y DAN z lebih besar
+         * dari y = false DAN true = false
+         * // (operator DAN ini jika salah satu/kedua nya false, maka hasil nya false)
+         * boolean compare8 = x > y || z > y; // x lebih besar dari y ATAU z lebih besar
+         * dari y = false ATAU true = false
+         * // (operator ATAU ini jika salah satu/kedua nya true, maka hasil nya true)
+         * boolean compare9 = !(x > y || z > y); // hasilnya = false ATAU true = true =
+         * false (tidak sama dengan ini
+         * // berarti kebalikan dari hasil di dalam kurung ini)
+         * boolean compare10 = (x < y && y > z) || (z + 2 < 5 || x + 7 > y); // operasi
+         * pertama: hasilnya = false ATAU true
+         * // = true (dari hasil 2 operasi dalam kurung
+         * // ini, hasil akhir nya menjadi true, karena
+         * // operator ATAU)
+         * 
+         * System.out.println(compare5);
+         */
     }
 }
