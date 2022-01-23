@@ -46,6 +46,7 @@ public class main {
          * System.out.println(sum3);
          * System.out.println(sum4);
          */
+
         /*
          * Scanner sc = new Scanner(System.in); // data type Scanner dari tools Scanner,
          * dinamakan sc dan selanjutnya cara
@@ -109,5 +110,27 @@ public class main {
          * 
          * System.out.println(compare5);
          */
+
+        // if, else if, else statements
+
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+
+        // JIKA, kondisi di dalam kurung ini TRUE, MAKA lakukan perintah di dalam {}
+        if (s.equals("tim")) {
+            System.out.println("You typed tim");
+        }
+
+        // DAN JIKA / JIKA LAIN, kondisi di dalam kurung diatas itu tidak TRUE, tetapi
+        // disini TRUE, maka lakukan perintah di dalam {}
+        else if (s.equals("hello")) {
+            System.out.println("hi");
+        }
+
+        // SELAIN, semua kondisi diatas itu tidak TRUE, maka lakukan perintah di dalam
+        // {}
+        else {
+            System.out.println("prints");
+        }
     }
 }
