@@ -111,21 +111,18 @@ public class Main {
         String s = sc.nextLine();
         int age = Integer.parseInt(s);
 
-        if  (age >= 18) { // jika input angka lebih dari/sama dengan 18
+        if (age >= 18) { // jika input angka lebih dari/sama dengan 18
             System.out.print("Input your fav food: "); // maka input lagi teks disini
             String food = sc.nextLine();
 
             if (food.equals("Pizza")) { // jika input teks Pizza, maka akan print out Mine too!
                 System.out.println("Mine too!");
-            }
-            else {
+            } else {
                 System.out.println("Not mine.."); // selain itu, Not Mine..
             }
-        }
-        else if (age >= 13) { // jika lebih dari/sama dengan 13, maka langsung print You are a teenager!
+        } else if (age >= 13) { // jika lebih dari/sama dengan 13, maka langsung print You are a teenager!
             System.out.println("You are a teenager!");
-        }
-        else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
+        } else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
             System.out.println("You are not a teenager or an adult");
         }
     }
