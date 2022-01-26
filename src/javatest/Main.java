@@ -81,7 +81,7 @@ public class Main {
 
         System.out.println(compare5);
 
-    */
+    
         // if, else if, else statements
 
         Scanner sc = new Scanner(System.in);
@@ -102,6 +102,31 @@ public class Main {
         // {}
         else {
             System.out.println("prints");
+        }
+    */
+
+        // Nested Statements
+        System.out.print("Input your age: ");
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int age = Integer.parseInt(s);
+
+        if  (age >= 18) { // jika input angka lebih dari/sama dengan 18
+            System.out.print("Input your fav food: "); // maka input lagi teks disini
+            String food = sc.nextLine();
+
+            if (food.equals("Pizza")) { // jika input teks Pizza, maka akan print out Mine too!
+                System.out.println("Mine too!");
+            }
+            else {
+                System.out.println("Not mine.."); // selain itu, Not Mine..
+            }
+        }
+        else if (age >= 13) { // jika lebih dari/sama dengan 13, maka langsung print You are a teenager!
+            System.out.println("You are a teenager!");
+        }
+        else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
+            System.out.println("You are not a teenager or an adult");
         }
     }
 }
