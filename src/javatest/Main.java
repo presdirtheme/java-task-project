@@ -103,7 +103,7 @@ public class Main {
         else {
             System.out.println("prints");
         }
-    */
+    
 
         // Nested Statements
         System.out.print("Input your age: ");
@@ -125,5 +125,24 @@ public class Main {
         } else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
             System.out.println("You are not a teenager or an adult");
         }
+    */
+
+        // Arrays
+        String[] newArr = new String[5]; // ditandai dengan [] untuk membuat Array // ini cara pertama untuk membuat array
+        newArr[0] = "hello"; // ini isi dari array yang sudah dibuat
+        newArr[1] = "tim"; // array dimulai/dihitung dari 0, jadi ini kita buat 5 "tempat", lalu isi "tempat tersebut" dimulai dari 0 = hello, 1 = "tim", dll
+        newArr[2] = "hi";
+        newArr[3] = "joe";
+        newArr[4] = "jim";
+
+        String x1 = newArr[0]; // cara untuk mengakses dan menyimpan value dari isi array ke variabel
+
+        int[] nums = {2,3,5,10,15}; // ini cara kedua untuk membuat dan mengisi element array
+
+        int x2 = nums[4];
+
+        System.out.println(x1);
+        System.out.println(x2);
+
     }
 }
