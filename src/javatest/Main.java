@@ -2,8 +2,6 @@ package javatest;
 
 // java tools untuk membuat hasil input
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
     /*
@@ -137,7 +135,7 @@ public class Main {
 
         String x1 = newArr[0]; // cara untuk mengakses dan menyimpan value dari isi array ke variabel
 
-        int[] nums = {2,3,5,10,15}; // ini cara kedua untuk membuat dan mengisi element array
+        int[] nums = {2, 3, 5, 10, 15}; // ini cara kedua untuk membuat dan mengisi element array
 
         int x2 = nums[4];
 
