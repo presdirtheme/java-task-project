@@ -146,7 +146,7 @@ public class Main {
         // For Loops
         int[] arr = {1,5,7,6,8,5}; // di dalam array ini ada 5 index, dimulai dari index 0 = 1, index 1 = 5
 
-        for (int i = 0; i < arr.length; i++) { // variabel i isinya = 0; i < berapa jumlah index yang ada di variabel arr; i ditambahkan 1 berulang-ulang 
+        for (int i = 0; i < arr.length; i++) { // variabel i isinya = 0; i < ada berapa jumlah index yang ada di variabel arr; isi variabel i (mulai dari 0) ditambahkan 1 berulang-ulang sampai dengan i < jumlah index arr 
             if (arr[i] == 5) { // jika isi variabel i itu 5, index ke berapa di arr yang sama isinya dengan variabel i (i = 0 (1), i = 1 *(5)*, i = 2 (7), i = 3 (6), i = 4 (8), i = 5 *(5)*)
                 System.out.println("i found 5 at index: " + i); // maka print index keberapa yang isinya angka 5 seperti isi variabel i itu
             }
