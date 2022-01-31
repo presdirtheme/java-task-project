@@ -123,7 +123,7 @@ public class Main {
         } else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
             System.out.println("You are not a teenager or an adult");
         }
-    */
+    
 
         // Arrays
         String[] newArr = new String[5]; // ditandai dengan [] untuk membuat Array // ini cara pertama untuk membuat array
@@ -141,6 +141,15 @@ public class Main {
 
         System.out.println(x1);
         System.out.println(x2);
+    */
 
+        // For Loops
+        int[] arr = {1,5,7,6,8,5}; // di dalam array ini ada 5 index, dimulai dari index 0 = 1, index 1 = 5
+
+        for (int i = 0; i < arr.length; i++) { // variabel i isinya = 0; i < berapa jumlah index yang ada di variabel arr; i ditambahkan 1 berulang-ulang 
+            if (arr[i] == 5) { // jika isi variabel i itu 5, index ke berapa di arr yang sama isinya dengan variabel i (i = 0 (1), i = 1 *(5)*, i = 2 (7), i = 3 (6), i = 4 (8), i = 5 *(5)*)
+                System.out.println("i found 5 at index: " + i); // maka print index keberapa yang isinya angka 5 seperti isi variabel i itu
+            }
+        }
     }
 }
