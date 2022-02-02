@@ -168,14 +168,14 @@ public class Main {
         String[] names = new String[5]; // buat 4 "tempat" array kosong
         Scanner sc = new Scanner(System.in); // inisialisasi untuk dapat memakai scanner input
 
-        for (int i=0; i < names.length; i++) { // variabel i masuk berulang kali ke dalam array names
+        for (int i = 0; i < names.length; i++) { // variabel i masuk berulang kali ke dalam array names
             System.out.print("Input: "); // beritahu user untuk input
             String input = sc.nextLine(); // tempat user input, dan isi nya disimpan di variabel input
             names[i] = input; // hasil dari input user, akan di masukkan ke dalam array names, sesuai urutan index dari variabel i (user input a pertama kali = i = 0 (index ke 0) = masuk ke index(ruang ke-) 0, looping lagi, user input b = masuk ke index 1, dst..)
         }
-        
+
         int count = 0;
-        for (String n:names) { // variabel n masuk ke dalam array names, dan menyimpan setiap isi dari dalam array names
+        for (String n : names) { // variabel n masuk ke dalam array names, dan menyimpan setiap isi dari dalam array names
             System.out.println(n + " " + "index ke: " + count); // lalu menampilkan isi dari array names
             count++;
 
