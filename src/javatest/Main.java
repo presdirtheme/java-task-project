@@ -1,5 +1,7 @@
 package javatest;
 
+import java.util.Scanner;
+
 // java tools untuk membuat hasil input
 
 public class Main {
@@ -141,7 +143,7 @@ public class Main {
 
         System.out.println(x1);
         System.out.println(x2);
-    */
+    
 
         // For Loops
         int[] arr = {1,5,7,6,8,5}; // di dalam array ini ada 5 index, dimulai dari index 0 = 1, index 1 = 5
@@ -149,6 +151,37 @@ public class Main {
         for (int i = 0; i < arr.length; i++) { // variabel i isinya = 0; i < ada berapa jumlah index yang ada di variabel arr; isi variabel i (mulai dari 0) ditambahkan 1 berulang-ulang sampai dengan i < jumlah index arr 
             if (arr[i] == 5) { // jika isi variabel i itu 5, index ke berapa di arr yang sama isinya dengan variabel i (i = 0 (1), i = 1 *(5)*, i = 2 (7), i = 3 (6), i = 4 (8), i = 5 *(5)*)
                 System.out.println("i found 5 at index: " + i); // maka print index keberapa yang isinya angka 5 seperti isi variabel i itu
+            }
+        }
+    */
+        // For Each Loop
+
+        /* int[] arr = {1,5,6,7,8};
+        
+        int count = 0; // untuk menghitung/cek index ke berapa
+        for (int element:arr) { // variabel element akan masuk ke array arr, lalu mengambil dan menyimpan sementara isi arr dari awal sampai akhir
+            System.out.println(element + " " + count);
+            count++; // variabel count ditambah setiap setelah di print/looping
+            System.out.println(element); // isi dari variabel element sesuai setelah ke-berapa kali masuk di arr (looping/masuk pertama kali = 1, masuk kedua kali = 5, dst..)
+        } */
+
+        String[] names = new String[5]; // buat 4 "tempat" array kosong
+        Scanner sc = new Scanner(System.in); // inisialisasi untuk dapat memakai scanner input
+
+        for (int i=0; i < names.length; i++) { // variabel i masuk berulang kali ke dalam array names
+            System.out.print("Input: "); // beritahu user untuk input
+            String input = sc.nextLine(); // tempat user input, dan isi nya disimpan di variabel input
+            names[i] = input; // hasil dari input user, akan di masukkan ke dalam array names, sesuai urutan index dari variabel i (user input a pertama kali = i = 0 (index ke 0) = masuk ke index(ruang ke-) 0, looping lagi, user input b = masuk ke index 1, dst..)
+        }
+        
+        int count = 0;
+        for (String n:names) { // variabel n masuk ke dalam array names, dan menyimpan setiap isi dari dalam array names
+            System.out.println(n + " " + "index ke: " + count); // lalu menampilkan isi dari array names
+            count++;
+
+            if (n.equals("n3")) { // jika variabel n = n3 (sesuai yang diinput user)
+                break; // maka berhenti sampai disini, karena n sudah = n3
+                // walau user sudah input 5 kali, karena yang akan di print itu variabel n dari isi array names, maka jika n = n3, berhenti untuk print
             }
         }
     }
