@@ -215,8 +215,8 @@ public class Main {
             System.out.print("Type a text: ");
             x = sc.nextLine(); // isi huruf
             count++;
-        } while ( !x.equals("z")); // Saat/Ketika/Sambil/Sementara x tidak sama dengan "z", seberapa banyak/sampai kapanpun inputnya jika bukan huruf z
-        
+        } while (!x.equals("z")); // Saat/Ketika/Sambil/Sementara x tidak sama dengan "z", seberapa banyak/sampai kapanpun inputnya jika bukan huruf z
+
         System.out.println("You tried " + count + " times"); // jika input nya "z", sudahi loops nya dan lakukan ini
     }
 }
