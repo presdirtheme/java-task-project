@@ -153,18 +153,20 @@ public class Main {
                 System.out.println("i found 5 at index: " + i); // maka print index keberapa yang isinya angka 5 seperti isi variabel i itu
             }
         }
-    */
+    
         // For Each Loop
 
-        /* int[] arr = {1,5,6,7,8};
+        // Example 1 
+        int[] arr = {1,5,6,7,8};
         
         int count = 0; // untuk menghitung/cek index ke berapa
         for (int element:arr) { // variabel element akan masuk ke array arr, lalu mengambil dan menyimpan sementara isi arr dari awal sampai akhir
             System.out.println(element + " " + count);
             count++; // variabel count ditambah setiap setelah di print/looping
             System.out.println(element); // isi dari variabel element sesuai setelah ke-berapa kali masuk di arr (looping/masuk pertama kali = 1, masuk kedua kali = 5, dst..)
-        } */
-
+        }
+        
+        // Example 2
         String[] names = new String[5]; // buat 4 "tempat" array kosong
         Scanner sc = new Scanner(System.in); // inisialisasi untuk dapat memakai scanner input
 
@@ -184,5 +186,37 @@ public class Main {
                 // walau user sudah input 5 kali, karena yang akan di print itu variabel n dari isi array names, maka jika n = n3, berhenti untuk print
             }
         }
+    */
+
+        // While Loops
+
+        Scanner sc = new Scanner(System.in);
+        /*
+        // Example 1
+        System.out.print("Type a number: ");
+        int x = sc.nextInt(); // isi angka
+        
+        int count = 0;
+        while (x != 10) { // Saat/Ketika/Sambil/Sementara x Tidak sama dengan 10, seberapa banyak/sampai kapanpun inputnya 
+            System.out.println("Type 10.."); // maka lakukan ini
+            System.out.print("Type a number: ");
+            x = sc.nextInt(); // isi angka
+            count++;
+        }
+        System.out.println("You tried " + count + " times"); // jika input nya 10, sudahi loops nya dan lakukan ini
+        */
+
+        // Do While Loops
+        // Example 2
+        String x;
+
+        int count = 0;
+        do { // Lakukan-lah dan Ulangi ini
+            System.out.print("Type a text: ");
+            x = sc.nextLine(); // isi huruf
+            count++;
+        } while ( !x.equals("z")); // Saat/Ketika/Sambil/Sementara x tidak sama dengan "z", seberapa banyak/sampai kapanpun inputnya jika bukan huruf z
+        
+        System.out.println("You tried " + count + " times"); // jika input nya "z", sudahi loops nya dan lakukan ini
     }
 }
