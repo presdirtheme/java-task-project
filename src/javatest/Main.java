@@ -1,6 +1,10 @@
 package javatest;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 // java tools untuk membuat hasil input
 
@@ -189,9 +193,9 @@ public class Main {
     */
 
         // While Loops
-
-        Scanner sc = new Scanner(System.in);
         /*
+        Scanner sc = new Scanner(System.in);
+        
         // Example 1
         System.out.print("Type a number: ");
         int x = sc.nextInt(); // isi angka
@@ -205,7 +209,7 @@ public class Main {
         }
         System.out.println("You tried " + count + " times"); // jika input nya 10, sudahi loops nya dan lakukan ini
         */
-
+    /*
         // Do While Loops
         // Example 2
         String x;
@@ -218,5 +222,56 @@ public class Main {
         } while (!x.equals("z")); // Saat/Ketika/Sambil/Sementara x tidak sama dengan "z", seberapa banyak/sampai kapanpun inputnya jika bukan huruf z
 
         System.out.println("You tried " + count + " times"); // jika input nya "z", sudahi loops nya dan lakukan ini
+    */
+
+        // Sets and Lists
+    /*
+        // Set<Integer> (unordered elements yang unik (1x = 1element) dan disimpan secara acak)
+        Set<Integer> t = new HashSet<Integer>();  // HashSet = ini perintah utama/standar untuk membuat Set element
+        t.add(5); // tambah element 5 ke dalam set t
+        t.add(7);
+        t.add(5);
+        t.add(10);
+        t.add(-6);
+        t.remove(7); // hapus element 7 dari set t
+        t.clear(); // hapus semua element di set t
+        t.isEmpty(); // apakah element di set t kosong
+        t.size(); // berapa banyak element di dalam set t
+
+       // boolean x = t.contains(5); // apakah ada element 5 di dalam set t
+        int x = t.size();
+        System.out.println(x);
+        */
+    /*
+        Set<Integer> v = new TreeSet<Integer>(); // TreeSet = kebalikan dari HashSet, ordered element, sisanya sama
+        v.add(5);
+        v.add(7);
+        v.add(5);
+        v.add(10);
+        v.add(-6);
+
+        System.out.println(v);
+
+        // dan ada LinkedHashSet = lebih cepat dari HashSet unuk beberapa operation
+    */
+        // ArrayList = sama seperti Array, tapi dynamic, bisa tambah/kurang/hapus jumlah array/element
+        ArrayList<Integer> y = new ArrayList<>();
+        y.add(1);
+        y.add(5);
+        y.add(2);
+        y.add(6);
+        y.add(4);
+        y.add(8);
+        y.get(1); // munculkan nilai 1 dari set y
+        y.set(1, 6); // masukkan element 6 ke index 1 (5 jadi ganti 6)
+        y.size();
+        y.subList(2, 5); // tampilkan element dari index ke 2 sampai 5
+        // saat kita pilih 2, 5 = hitung/range index dari 0 s/d 5
+        // saat akan ditampilkan = (mulai dari 2 (index 2) s/d 4 (index 4), index 5 tidak diambil
+        // hanya 3 element yang diambil (5-2 = 3)
+        System.out.println(y.subList(2, 5));
+
+        // dan ada LinkedList = lebih cepat dari ArrayList unuk beberapa operation
     }
+    
 }
