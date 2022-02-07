@@ -10,9 +10,10 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
-    /*
+    
         // Variable and Data Types
         // primitive data type
+    /*
         int helloWorld = 5;
         double num2 = 5.5;
         boolean b = true;
@@ -26,9 +27,11 @@ public class Main {
         System.out.println(b);
         System.out.println(c);
         System.out.println(a);
+    */
 
-
+    
         // Basic Operators
+    /*
         int x = 5;
         int y = 7;
         double z = 10; // bilangan koma
@@ -46,7 +49,11 @@ public class Main {
         System.out.println(d);
         System.out.println(sum3);
         System.out.println(sum4);
+    */
 
+    
+        // Scanner Input
+    /*
 
         Scanner sc = new Scanner(System.in); // data type Scanner dari tools Scanner, dinamakan sc dan selanjutnya cara menggunakannya
         String scanned = sc.next(); // ini cara dan tempat untuk mendapat input dari user, simpan di variabel scanned
@@ -57,9 +64,11 @@ public class Main {
         int x = Integer.parseInt(scanned); // cara untuk mengubah input dari variabel scanned yaitu data type string, menjadi input dan output integer dan di simpan di variabel x
 
         System.out.println(x);
+    */
 
-
+    
         // Conditions and Booleans
+    /*
         int x = 6;
         int y = 7;
         int z = 10;
@@ -85,8 +94,10 @@ public class Main {
 
         System.out.println(compare5);
 
+    */
     
         // if, else if, else statements
+    /*
 
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -107,9 +118,11 @@ public class Main {
         else {
             System.out.println("prints");
         }
+    */
     
 
         // Nested Statements
+    /*
         System.out.print("Input your age: ");
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -129,9 +142,11 @@ public class Main {
         } else { // selain semua ruang lingkup angka diatas, langsung print You are not a teenager or an adult
             System.out.println("You are not a teenager or an adult");
         }
+    */
     
 
         // Arrays
+    /*
         String[] newArr = new String[5]; // ditandai dengan [] untuk membuat Array // ini cara pertama untuk membuat array
         newArr[0] = "hello"; // ini isi dari array yang sudah dibuat
         newArr[1] = "tim"; // array dimulai/dihitung dari 0, jadi ini kita buat 5 "tempat", lalu isi "tempat tersebut" dimulai dari 0 = hello, 1 = "tim", dll
@@ -147,9 +162,11 @@ public class Main {
 
         System.out.println(x1);
         System.out.println(x2);
+    */
     
 
         // For Loops
+    /*
         int[] arr = {1,5,7,6,8,5}; // di dalam array ini ada 5 index, dimulai dari index 0 = 1, index 1 = 5
 
         for (int i = 0; i < arr.length; i++) { // variabel i isinya = 0; i < ada berapa jumlah index yang ada di variabel arr; isi variabel i (mulai dari 0) ditambahkan 1 berulang-ulang sampai dengan i < jumlah index arr 
@@ -157,8 +174,10 @@ public class Main {
                 System.out.println("i found 5 at index: " + i); // maka print index keberapa yang isinya angka 5 seperti isi variabel i itu
             }
         }
+    */
     
         // For Each Loop
+    /*
 
         // Example 1 
         int[] arr = {1,5,6,7,8};
@@ -190,10 +209,12 @@ public class Main {
                 // walau user sudah input 5 kali, karena yang akan di print itu variabel n dari isi array names, maka jika n = n3, berhenti untuk print
             }
         }
+    
     */
-
+    
         // While Loops
-        /*
+    /*
+        
         Scanner sc = new Scanner(System.in);
         
         // Example 1
@@ -209,8 +230,10 @@ public class Main {
         }
         System.out.println("You tried " + count + " times"); // jika input nya 10, sudahi loops nya dan lakukan ini
         */
-    /*
+
+    
         // Do While Loops
+    /*
         // Example 2
         String x;
 
@@ -223,7 +246,7 @@ public class Main {
 
         System.out.println("You tried " + count + " times"); // jika input nya "z", sudahi loops nya dan lakukan ini
     */
-
+    
         // Sets and Lists
     /*
         // Set<Integer> (unordered elements yang unik (1x = 1element) dan disimpan secara acak)
@@ -238,11 +261,10 @@ public class Main {
         t.isEmpty(); // apakah element di set t kosong
         t.size(); // berapa banyak element di dalam set t
 
-       // boolean x = t.contains(5); // apakah ada element 5 di dalam set t
+        boolean x = t.contains(5); // apakah ada element 5 di dalam set t
         int x = t.size();
         System.out.println(x);
-        */
-    /*
+    
         Set<Integer> v = new TreeSet<Integer>(); // TreeSet = kebalikan dari HashSet, ordered element, sisanya sama
         v.add(5);
         v.add(7);
@@ -254,7 +276,9 @@ public class Main {
 
         // dan ada LinkedHashSet = lebih cepat dari HashSet unuk beberapa operation
     */
+
         // ArrayList = sama seperti Array, tapi dynamic, bisa tambah/kurang/hapus jumlah array/element
+    
         ArrayList<Integer> y = new ArrayList<>();
         y.add(1);
         y.add(5);
